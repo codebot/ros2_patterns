@@ -9,6 +9,6 @@ def service_cb(request, response):
 
 if __name__ == '__main__':
     rclpy.init()
-    node = rclpy.create_node('empty_service')
-    srv = node.create_service(Empty, 'service', service_cb)
+    node = rclpy.create_node('test_service')
+    srv = node.create_service(Empty, 'my_service', service_cb)
     rclpy.spin(node)

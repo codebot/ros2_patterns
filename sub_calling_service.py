@@ -10,7 +10,7 @@ class SubscriberClientAsync(Node):
 
     def __init__(self):
         super().__init__('sub_client_node')
-        self.client = self.create_client(Empty, 'service')
+        self.client = self.create_client(Empty, 'my_service')
         self.sub = self.create_subscription(String, 'topic', self.topic_cb)
         self.client_futures = []
 
