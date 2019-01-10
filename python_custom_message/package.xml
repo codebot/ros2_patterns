@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>python_custom_message</name>
+  <version>0.0.0</version>
+  <description>using rclpy with a custom message in same package</description>
+  <maintainer email="mquigley@openrobotics.org">Morgan Quigley</maintainer>
+  <license>Apache License 2.0</license>
+
+  <build_depend>ament_cmake</build_depend>
+  <build_depend>builtin_interfaces</build_depend>
+  <build_depend>rosidl_default_generators</build_depend>
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>builtin_interfaces</exec_depend>
+
+  <member_of_group>rosidl_interface_packages</member_of_group>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
